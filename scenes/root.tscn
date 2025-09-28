@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqcj5wfm50l8o"]
+
+[ext_resource type="PackedScene" uid="uid://ch6ctgkwgmuit" path="res://scenes/world.tscn" id="2_twpsu"]
+[ext_resource type="PackedScene" uid="uid://dixtu12jfn7j1" path="res://scenes/home_menu.tscn" id="3_jh1ax"]
+
+[node name="root" type="Node"]
+
+[node name="HomeMenu" parent="." instance=ExtResource("3_jh1ax")]
+visible = false
+
+[node name="World" parent="." instance=ExtResource("2_twpsu")]

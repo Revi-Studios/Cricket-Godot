@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://dixtu12jfn7j1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4h3mk"]
+font_size = 40
+
+[node name="HomeMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 53.0
+offset_right = 719.0
+offset_bottom = 112.0
+text = "Cricket"
+label_settings = SubResource("LabelSettings_4h3mk")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 390.0
+offset_top = 197.0
+offset_right = 743.0
+offset_bottom = 309.0
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Multiplayer" type="Button" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+text = "Multiplayer
+"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Singleplayer" type="Button" parent="VBoxContainer/MarginContainer2"]
+layout_mode = 2
+text = "Singleplayer"
